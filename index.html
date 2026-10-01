@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const log = console.log.bind(console);
+
+      function abc() {
+        return `Привет ${name}`;
+      }
+      let name = "Араб";
+      log(abc());
+
+      function user(name, age) {
+        log(name, age);
+      }
+      user("Arab", 17);
+      function car(marka, model, year) {
+        log(`Марка: ${marka}, Модель: ${model}, Год: ${year}`);
+      }
+      car("Mercedes-Benz", "C-Class", 2023);
+    </script>
+  </body>
+</html>
