@@ -9,20 +9,56 @@
     <script>
       const log = console.log.bind(console);
 
-      function abc() {
-        return `Привет ${name}`;
-      }
-      let name = "Араб";
-      log(abc());
+      // function abc() {
+      //   return `Привет ${name}`;
+      // }
+      // let name = "Араб";
+      // log(abc());
 
-      function user(name, age) {
-        log(name, age);
+      // function user(name, age) {
+      //   log(name, age);
+      // }
+      // user("Arab", 17);
+      // function car(marka, model, year) {
+      //   log(`Марка: ${marka}, Модель: ${model}, Год: ${year}`);
+      // }
+      // car("Mercedes-Benz", "C-Class", 2023);
+
+      function abc(sign, a, b) {
+        if (sign == "+") {
+          return a + b;
+        } else if (sign == "-") {
+          return a - b;
+        } else if (sign == "*") {
+          return a * b;
+        } else if (sign == "/") {
+          if (a == 0 || b == 0) {
+            log("На 0 делить нельзя");
+          } else {
+            return a / b;
+          }
+        }
       }
-      user("Arab", 17);
-      function car(marka, model, year) {
-        log(`Марка: ${marka}, Модель: ${model}, Год: ${year}`);
+      function person(name, lastname, age) {
+        log(`Имя: ${name}, Фамилия: ${lastname}, Возраст: ${age}`);
       }
-      car("Mercedes-Benz", "C-Class", 2023);
+
+      function car(brand, model, year, color) {
+        log(`Марка: ${brand}`);
+        log(`Модель: ${model}`);
+        log(`Год: ${year}`);
+        log(`Цвет: ${color}`);
+      }
+      car("Mercedes-Benz", "C-Class", 2023, "Черный");
+
+      function WelcomeAlert() {
+        alert("Добро Пожаловать");
+      }
+      function WelcomeLog() {
+        log("Добро Пожаловать");
+      }
+      WelcomeAlert();
+      WelcomeLog();
     </script>
   </body>
 </html>
